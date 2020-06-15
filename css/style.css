@@ -47,13 +47,14 @@ a {
   background-size: 100%;
   width: 5rem;
   height: 5rem;
+  margin-right: 0.2rem;
 }
 .logo-btn {
   display: block;
   width: 4.6rem;
   height: 3.6rem;
   cursor: pointer;
-  margin: 0.6rem 0 0 0.2rem;
+  margin: 0.6rem 0 0 0;
 }
 
 /*---MAIN---*/
@@ -97,4 +98,24 @@ a {
 }
 .order-now-btn:hover{
   background-color: var(--hover-pink);
+}
+
+/* ---SECTION-2--- */
+.section2{
+  background-color: var(--pale-pink);
+  color: var(--white-grey);
+}
+.section2 h2{
+  font-size: 2.6rem;
+}
+.dishes{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dish-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
