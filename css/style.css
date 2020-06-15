@@ -1,11 +1,11 @@
 :root{
   --pale-pink: rgb(237, 115, 115);
-  --hover-pink: rgb(235, 96, 96);
+  --hover-pink: rgb(243, 79, 79);
   --white-grey: rgb(252, 252, 252);
-  --overlay-white: rgba(252, 252, 252, 0.95);
-  --menu-speed: 0.75s;
-  
+  --black: rgb(20, 20, 20);
+  --overlay-white: rgba(252, 252, 252, 1);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -23,23 +23,23 @@ body{
 .v-height{
   height: 100vh;
 }
-[ul] {
+ul {
   list-style: none;
 }
-[href] {
+a {
   text-decoration: none;
 }
 
 /*---MENU---*/
-
-.header-menu{
-  height: 0rem;
-  /*height: 3.75rem;*/
+.header{
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;   
-  position: relative;  
+  justify-content: space-between;
+  position: fixed;
 }
+
+
 .logo{
   background-image: url(../images/logo.png);
   background-position: center;
@@ -47,6 +47,13 @@ body{
   background-size: 100%;
   width: 5rem;
   height: 5rem;
+}
+.logo-btn {
+  display: block;
+  width: 4.6rem;
+  height: 3.6rem;
+  cursor: pointer;
+  margin: 0.6rem 0 0 0.2rem;
 }
 
 /*---MAIN---*/
@@ -63,7 +70,6 @@ body{
   background-position: 75% 0%;
   background-repeat: no-repeat;
 }
-
 .bg-top{
   background-image: linear-gradient(rgba(235, 96, 96, 0.6), rgba(255, 245, 245, 0.1));
 }
@@ -78,6 +84,7 @@ body{
   color: var(--white-grey);
   font-size: 3.2rem;
 }
+
 .order-now-btn{
   display: inline-block;
   color: var(--white-grey);
@@ -86,7 +93,7 @@ body{
   padding: 3% 5%;
   border-radius: 2rem;
   margin: 10% 0%;
-  transition: background-color 1s ease-out;
+  transition: background-color 1s ease;
 }
 .order-now-btn:hover{
   background-color: var(--hover-pink);
