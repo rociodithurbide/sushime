@@ -15,6 +15,12 @@ body{
   font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 .container{
   margin: 0 auto;
   width: 80%;
@@ -23,12 +29,13 @@ body{
 .v-height{
   height: 100vh;
 }
-ul {
-  list-style: none;
+.btn{
+  display: inline-block;
+  padding: 3% 5%;
+  margin: 10% 0%;
+  font-weight: 600;
 }
-a {
-  text-decoration: none;
-}
+
 
 /*---MENU---*/
 .header{
@@ -85,15 +92,10 @@ a {
   color: var(--white-grey);
   font-size: 3.2rem;
 }
-
 .order-now-btn{
-  display: inline-block;
   color: var(--white-grey);
   background-color: var(--pale-pink);
-  font-weight: 600;
-  padding: 3% 5%;
   border-radius: 2rem;
-  margin: 10% 0%;
   transition: background-color 1s ease;
 }
 .order-now-btn:hover{
@@ -104,18 +106,75 @@ a {
 .section2{
   background-color: var(--pale-pink);
   color: var(--white-grey);
+  text-align: center;
 }
 .section2 h2{
   font-size: 2.6rem;
+  margin: 2rem 0;
+  padding: 0.5rem;
+}
+.section2 h3{
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+.section2 .dish-intro{
+  padding: 0.5rem;
+  margin-bottom: 2rem;
 }
 .dishes{
-  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .dish-box{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 550px){
+  .dish-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .dish-right-side-text{
+    width: 65%;
+    text-align: left;
+  }
+}
+.dish{
+  width: 7.5rem;
+  height: 7.5rem;
+  background-size: 7.5rem 7.5rem;
+  background-repeat: no-repeat;
+}
+.dish1{
+  background-image: url(../images/dish1.png);
+}
+.dish2{
+  background-image: url(../images/dish2.png);
+}
+.dish3{
+  background-image: url(../images/dish3.png);
+}
+
+.see-menu-btn{
+  display: block;
+  color: var(--white-grey);
+  border: 1px solid var(--white-grey);
+  width: 8rem;
+  text-align: center;
+  margin: 1.5rem auto;
+  transition: background-color 0.4s ease;
+}
+.see-menu-btn:hover{
+  background-color: var(--white-grey);
+  color: var(--pale-pink);
+}
+@media (min-width: 550px){
+  .see-menu-btn{
+    width: 10rem;
+  }
 }
