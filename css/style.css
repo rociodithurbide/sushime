@@ -145,6 +145,7 @@ a {
   }
 }
 .dish{
+  margin: 0 auto 1rem auto;
   width: 7.5rem;
   height: 7.5rem;
   background-size: 7.5rem 7.5rem;
@@ -159,14 +160,16 @@ a {
 .dish3{
   background-image: url(../images/dish3.png);
 }
-
+.dish-name{
+  margin-bottom: 1rem;;
+}
 .see-menu-btn{
   display: block;
   color: var(--white-grey);
   border: 1px solid var(--white-grey);
   width: 8rem;
   text-align: center;
-  margin: 1.5rem auto;
+  margin: 1rem auto 3rem auto;
   transition: background-color 0.4s ease;
 }
 .see-menu-btn:hover{
@@ -177,4 +180,13 @@ a {
   .see-menu-btn{
     width: 10rem;
   }
+  .dish-name{
+    margin-bottom: 0.5rem;;
+  }
+}
+
+.section3{
+  background-image: url(../images/sushiman-bg.jpg);
+  background-size: auto 100vh;
+  background-position: -3.5rem 0;
 }
