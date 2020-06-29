@@ -226,3 +226,9 @@ a {
 .chef-description p{
   padding: 0.5rem;
 }
+.gourmet-menu{
+  grid-row: 4/5;
+}
+.btn-gourmet-menu:hover{
+  color: var(--dark-grey);
+}
