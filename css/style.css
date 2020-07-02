@@ -232,3 +232,17 @@ a {
 .btn-gourmet-menu:hover{
   color: var(--dark-grey);
 }
+
+/* ---SECTION-4--- */
+.subscription{
+  text-align: center;  
+  color: var(--pale-pink);
+}
+.subscription h2{
+  margin: 3rem auto;
+}
+.subscription p{
+  padding: 0 2rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
