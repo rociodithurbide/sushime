@@ -248,6 +248,9 @@ a {
   font-size: 1.1rem;
   font-weight: 200;
 }
+.subscription .email-subscription{
+  width: 100%;
+}
 
 /* --- FOOTER ---*/
 .footer{
