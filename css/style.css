@@ -238,10 +238,10 @@ a {
 
 .subscription{
   text-align: center;  
-  color: var(--pale-pink);
+  color: var(--white-grey);
 }
 .subscription h2{
-  margin: 3rem auto;
+  margin: 4rem auto 3rem;
 }
 .subscription p{
   padding: 0 2rem;
