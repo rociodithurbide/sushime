@@ -234,25 +234,84 @@ a {
   color: var(--dark-grey);
 }
 
-/* ---SECTION-4--- */
-
-.subscription{
+/* --- FOOTER ---*/
+.footer{
+  background-color: var(--pale-pink);
+}
+/* -- subscription -- */
+.footer .subscription{
   text-align: center;  
   color: var(--white-grey);
 }
-.subscription h2{
-  margin: 4rem auto 3rem;
+.footer .subscription .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.subscription p{
+.footer .subscription h2{
+  margin: 2rem auto;
+}
+.footer .subscription p{
   padding: 0 2rem;
   font-size: 1.1rem;
   font-weight: 200;
 }
-.subscription .email-subscription{
+.footer .subscription .label-subscription{
+  display: block;
   width: 100%;
+  margin: 2rem auto 0;
+}
+.footer .subscription .email-subscription{
+  width: 100%;
+  padding: 0.6rem 0.5rem;
+  border-radius: 5px;
+  border: 0;
+}
+.email-subscription::placeholder{
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #E5E5E5;
+  text-align: center;
+}
+.footer .subscription .subscribe-btn{
+  display: block;
+  width: 12rem;
+  margin: 2rem auto;
+  background-color: var(--white-grey);
+  color: var(--pale-pink);
+  border-radius: 6rem;
+  font-weight: 700;
+}
+.footer .subscription .logo-footer{
+  margin: 0 auto 2rem;
+}
+.footer .subscription .copyright{
+  margin-bottom: 2rem;
+}
+.footer .subscription .follow-us-tittle{
+  margin: 2rem 0;
+}
+.footer .subscription .social-media-links{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.footer .subscription .social-media-links .facebook-icon{
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/facebook_white.png);
+  background-repeat: no-repeat;
+  margin-right: 1rem;
+}
+.footer .subscription .social-media-links .instagram-icon{
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/instagram_white.png);
+  background-repeat: no-repeat;
 }
 
-/* --- FOOTER ---*/
-.footer{
-  background-color: var(--pale-pink)
+.footer .subscription .freepik{
+  color: var(--white-grey);
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
 }
